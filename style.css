@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+}
+
+.form h2 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.field {
+    flex: 1;
+    min-width: 0;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form input:not([type="checkbox"]),
+.form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 17px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: #f8fafc;
+    font-size: 13px;
+    color: #334155;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form input:focus,
+.form select:focus {
+    border-color: #2563eb;
+    background: white;
+}
+
+.form input::placeholder {
+    color: #94a3b8;
+}
+
+.form select {
+    cursor: pointer;
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.show-password input {
+    cursor: pointer;
+    accent-color: #2563eb;
+}
+
+.show-password label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: #1e40af;
+}
+
+.form button:active {
+    transform: scale(0.98);
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.footer-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+    .form {
+        padding: 20px;
+    }
+
+    .row {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
